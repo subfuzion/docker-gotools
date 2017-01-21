@@ -25,7 +25,7 @@ RUN install-protoc
 # Customize the shell in root/.bashrc, add other shell support here, etc.
 ADD bash /root
 
-# If you change the working directory, you will break the amp Makefile
+# TODO: might want to use /go as the work directory...
 WORKDIR /go/src
 CMD [ "echo", "[gotools] specify the command to run" ]
 
